@@ -1,0 +1,50 @@
+.picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  max-height: calc(100vh - 220px);
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.card {
+  appearance: none;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  font: inherit;
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.selected {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  background: var(--accent-soft);
+}
+
+.name {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.blurb {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+@media (max-width: 720px) {
+  .picker {
+    grid-template-columns: 1fr;
+  }
+}

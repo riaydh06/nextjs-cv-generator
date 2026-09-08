@@ -1,0 +1,690 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.toolbarSectionLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toolbarSectionRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Template Navigation */
+.templateNavGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: #f4f1ea;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.templateArrowBtn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.templateArrowBtn:hover {
+  background: #ffffff;
+  color: var(--accent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.templateArrowBtn:active {
+  transform: scale(0.95);
+}
+
+.arrowIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.templateBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.templateLabel {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.templateName {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.templateCounter {
+  font-size: 0.74rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Zoom Controls */
+.zoomGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: #f4f1ea;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.zoomBtn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.zoomBtn:hover:not(:disabled) {
+  background: #ffffff;
+  color: var(--accent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.zoomBtn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.zoomBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.toolIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.zoomResetBtn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0 8px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-width: 44px;
+}
+
+.zoomResetBtn:hover {
+  background: #ffffff;
+  color: var(--accent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.pageInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pageBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  background: #f4f1ea;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.pageBadgeMulti {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.docIcon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.8;
+}
+
+.breakHint {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.toolbarActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.jumpGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.jumpLabel {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.jumpBtn {
+  appearance: none;
+  background: #f9f9f9;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.jumpBtn:hover {
+  background: #e8f0eb;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.toggleBtn {
+  appearance: none;
+  background: #f9f9f9;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.toggleBtn:hover {
+  background: #f0ede6;
+  color: var(--ink);
+}
+
+.toggleBtn.toggleActive {
+  background: #e8f0eb;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.toggleDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: #9ca3af;
+}
+
+.toggleActive .toggleDot {
+  background: #16a34a;
+}
+
+.modeTabs {
+  display: flex;
+  background: #f4f1ea;
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.tabBtn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tabActive {
+  background: #ffffff;
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Preview Area & Floating Navigation */
+.previewWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.floatingNavBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 25;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floatingNavBtn:hover {
+  background: #ffffff;
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.floatingNavBtn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.floatingNavLeft {
+  left: 14px;
+}
+
+.floatingNavRight {
+  right: 14px;
+}
+
+.floatingNavIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.floatingNavTooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.floatingNavBtn:hover .floatingNavTooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.viewport {
+  overflow: auto;
+  padding: 28px 64px 36px;
+  background: #e8e4db;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: safe center;
+  align-items: flex-start;
+  min-height: 520px;
+  max-height: 84vh;
+  position: relative;
+}
+
+.scale {
+  /* Default fallback, overridden by style={{ zoom: zoomLevel }} */
+  zoom: 0.68;
+}
+
+.sheetContainer {
+  position: relative;
+  width: 794px;
+}
+
+/* Page Break Overlay */
+.pageBreakOverlay {
+  position: absolute;
+  left: -48px;
+  right: -48px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 30;
+}
+
+.breakMainRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.gutterBadgeLeft,
+.gutterBadgeRight {
+  flex-shrink: 0;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  pointer-events: auto;
+}
+
+.gutterBadgeRight {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.breakLineLeft,
+.breakLineRight {
+  flex: 1;
+  height: 0;
+  border-top: 2.5px dashed #2563eb;
+  opacity: 0.9;
+}
+
+.breakPill {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1e293b;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  pointer-events: auto;
+}
+
+.breakIcon {
+  font-size: 14px;
+  transform: rotate(-90deg);
+  display: inline-block;
+  color: #93c5fd;
+}
+
+.breakLabel {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #93c5fd;
+}
+
+.breakSep {
+  opacity: 0.5;
+}
+
+.breakPageNum {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.pageBreakMarginGuide {
+  width: 794px;
+  margin-top: 8px;
+  padding: 6px 16px;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px dashed rgba(37, 99, 235, 0.4);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 10.5px;
+  color: #1d4ed8;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.marginGuideIcon {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+/* Page Side Tags */
+.pageSideTag {
+  position: absolute;
+  right: -52px;
+  background: #334155;
+  color: #f1f5f9;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+
+/* PDF Preview Mode */
+.pdfContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: safe center;
+  width: 100%;
+  height: calc(84vh - 64px);
+  min-height: 580px;
+}
+
+.pdfSheetWrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
+  flex-shrink: 0;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.pdfLoadingOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 10;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.pdfLoadingOverlay .spinner {
+  border: 3px solid rgba(0, 0, 0, 0.15);
+  border-top-color: var(--accent);
+}
+
+.pdfIframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: #ffffff;
+}
+
+.pdfState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 500;
+  min-height: 480px;
+  width: 100%;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(0, 0, 0, 0.15);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.errorText {
+  color: #dc2626;
+  font-size: 0.88rem;
+  max-width: 400px;
+  text-align: center;
+}
+
+.retryBtn {
+  appearance: none;
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.retryBtn:hover {
+  background: #f4f1ea;
+}
+
+@media (max-width: 900px) {
+  .toolbarSectionLeft,
+  .toolbarSectionRight {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .floatingNavBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .floatingNavIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .floatingNavLeft {
+    left: 8px;
+  }
+
+  .floatingNavRight {
+    right: 8px;
+  }
+
+  .floatingNavTooltip {
+    display: none;
+  }
+
+  .viewport {
+    padding: 20px 48px;
+  }
+
+  .pdfContainer {
+    height: 72vh;
+    min-height: 480px;
+  }
+
+  .pdfSheetWrapper {
+    max-width: 100%;
+  }
+}

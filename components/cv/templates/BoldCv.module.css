@@ -1,0 +1,92 @@
+.sheet {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  padding: 48px 52px;
+  background: #fff;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  border-bottom: 8px solid #111;
+  padding-bottom: 16px;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.name {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 8px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.contact {
+  margin: 10px 0 22px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-left: 8px solid #111;
+  padding-left: 10px;
+}
+
+.block {
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+}
+
+.row h3,
+.block h3 {
+  margin: 0;
+  font-size: 13.5px;
+}
+
+.meta {
+  margin: 2px 0 0;
+  color: #444;
+}
+
+.block ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+.block a {
+  color: #111;
+}

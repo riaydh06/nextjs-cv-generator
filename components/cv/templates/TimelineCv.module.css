@@ -1,0 +1,112 @@
+.sheet {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  padding: 48px 56px;
+  background: #fff;
+  color: #1f2937;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.photo {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 38px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.title {
+  margin: 4px 0 0;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.contact {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 11.5px;
+}
+
+.summary {
+  margin: 0 0 22px;
+  color: #374151;
+}
+
+.sheet h2 {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+.sheet section {
+  margin-bottom: 22px;
+}
+
+.timeline {
+  border-left: 2px solid #bfdbfe;
+  margin-left: 7px;
+  padding-left: 22px;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.dot {
+  position: absolute;
+  left: -29px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.dates {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.item h3,
+.block h3 {
+  margin: 2px 0 0;
+  font-size: 13.5px;
+}
+
+.meta {
+  margin: 2px 0 0;
+  color: #6b7280;
+}
+
+.item ul {
+  margin: 6px 0 0 16px;
+  padding: 0;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.block a {
+  color: #2563eb;
+}

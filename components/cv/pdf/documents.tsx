@@ -1,0 +1,130 @@
+import { createElement } from 'react'
+
+import type { CvData, CvTemplateId } from '@/lib/cv/types'
+
+import { ClassicPdf } from './ClassicPdf'
+import {
+  AcademicPdf,
+  BoldPdf,
+  CompactPdf,
+  CoralPdf,
+  EditorialPdf,
+  ElegantPdf,
+  ExecutivePdf,
+  MidnightPdf,
+  SlatePdf,
+  TimelinePdf,
+} from './extra'
+import {
+  AtelierPdf,
+  AuroraPdf,
+  ForestPdf,
+  FramePdf,
+  IndustrialPdf,
+  MonoPdf,
+  NordicPdf,
+  RibbonPdf,
+  SplitPdf,
+  SummitPdf,
+} from './extra2'
+import {
+  CanvasPdf,
+  EmberPdf,
+  HarborPdf,
+  LegalPdf,
+  LumenPdf,
+  MetroPdf,
+  OceanPdf,
+  PaperPdf,
+  PulsePdf,
+  QuartzPdf,
+} from './extra3'
+import {
+  CarbonPdf,
+  CedarPdf,
+  CopperPdf,
+  GlacierPdf,
+  InkPdf,
+  LinenPdf,
+  NovaPdf,
+  OrchidPdf,
+  SagePdf,
+  SunrisePdf,
+} from './extra4'
+import {
+  AmberPdf,
+  CobaltPdf,
+  CrimsonPdf,
+  EmeraldPdf,
+  FuchsiaPdf,
+  GraphitePdf,
+  MonacoPdf,
+  NordPdf,
+  SandstonePdf,
+  TerracottaPdf,
+  FlarePdf,
+} from './extra5'
+import { MinimalPdf } from './MinimalPdf'
+import { ModernPdf } from './ModernPdf'
+
+const DOCUMENTS = {
+  classic: ClassicPdf,
+  modern: ModernPdf,
+  minimal: MinimalPdf,
+  elegant: ElegantPdf,
+  bold: BoldPdf,
+  slate: SlatePdf,
+  timeline: TimelinePdf,
+  executive: ExecutivePdf,
+  coral: CoralPdf,
+  compact: CompactPdf,
+  academic: AcademicPdf,
+  midnight: MidnightPdf,
+  editorial: EditorialPdf,
+  aurora: AuroraPdf,
+  forest: ForestPdf,
+  mono: MonoPdf,
+  frame: FramePdf,
+  split: SplitPdf,
+  ribbon: RibbonPdf,
+  nordic: NordicPdf,
+  industrial: IndustrialPdf,
+  atelier: AtelierPdf,
+  summit: SummitPdf,
+  ocean: OceanPdf,
+  paper: PaperPdf,
+  metro: MetroPdf,
+  legal: LegalPdf,
+  canvas: CanvasPdf,
+  ember: EmberPdf,
+  harbor: HarborPdf,
+  lumen: LumenPdf,
+  quartz: QuartzPdf,
+  pulse: PulsePdf,
+  sage: SagePdf,
+  copper: CopperPdf,
+  ink: InkPdf,
+  glacier: GlacierPdf,
+  orchid: OrchidPdf,
+  cedar: CedarPdf,
+  nova: NovaPdf,
+  linen: LinenPdf,
+  carbon: CarbonPdf,
+  sunrise: SunrisePdf,
+  emerald: EmeraldPdf,
+  amber: AmberPdf,
+  cobalt: CobaltPdf,
+  terracotta: TerracottaPdf,
+  monaco: MonacoPdf,
+  fuchsia: FuchsiaPdf,
+  graphite: GraphitePdf,
+  nord: NordPdf,
+  crimson: CrimsonPdf,
+  sandstone: SandstonePdf,
+  flare: FlarePdf,
+} as const
+
+export function getPdfDocument(template: CvTemplateId, data: CvData) {
+  const Document = DOCUMENTS[template] ?? ClassicPdf
+  return createElement(Document, { data })
+}

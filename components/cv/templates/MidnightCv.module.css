@@ -1,0 +1,115 @@
+.sheet {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  padding: 48px 52px;
+  background: #0b1220;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+  color: #f8fafc;
+}
+
+.title {
+  margin: 6px 0 0;
+  color: #2dd4bf;
+  font-weight: 700;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #2dd4bf;
+}
+
+.contact {
+  margin: 14px 0;
+  padding: 10px 0;
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+  color: #94a3b8;
+  font-size: 11.5px;
+}
+
+.summary {
+  margin: 0 0 22px;
+  color: #cbd5e1;
+}
+
+.sheet h2 {
+  margin: 0 0 10px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2dd4bf;
+}
+
+.sheet section {
+  margin-bottom: 20px;
+}
+
+.block {
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.row h3,
+.block h3 {
+  margin: 0;
+  font-size: 13.5px;
+  color: #f8fafc;
+}
+
+.row span {
+  color: #2dd4bf;
+  font-size: 11.5px;
+}
+
+.meta {
+  margin: 2px 0 0;
+  color: #94a3b8;
+}
+
+.block ul {
+  margin: 6px 0 0 16px;
+  padding: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  border: 1px solid #2dd4bf;
+  color: #2dd4bf;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 11px;
+}
+
+.block a {
+  color: #2dd4bf;
+}

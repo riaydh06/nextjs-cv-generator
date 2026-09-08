@@ -1,0 +1,104 @@
+.sheet {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  padding: 52px 60px;
+  background: #faf7f2;
+  color: #1e293b;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.photo {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 44px;
+  margin-bottom: 12px;
+  border: 2px solid #c4a35a;
+}
+
+.name {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 500;
+  color: #1e3a5f;
+  letter-spacing: 0.02em;
+}
+
+.title {
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #5c6b80;
+}
+
+.goldRule {
+  width: 72px;
+  height: 2px;
+  margin: 14px auto 10px;
+  background: #c4a35a;
+  box-shadow: 0 4px 0 #c4a35a;
+}
+
+.contact {
+  margin: 12px 0 0;
+  font-size: 11.5px;
+  color: #5c6b80;
+}
+
+.section {
+  margin-bottom: 18px;
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #1e3a5f;
+  border-bottom: 1px solid #c4a35a;
+  padding-bottom: 4px;
+}
+
+.block {
+  margin-bottom: 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.row h3,
+.block h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #1e3a5f;
+}
+
+.meta {
+  margin: 2px 0 0;
+  color: #5c6b80;
+}
+
+.block ul {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+.block a {
+  color: #1e3a5f;
+  font-size: 12px;
+}
+
+.skills {
+  margin: 0;
+}

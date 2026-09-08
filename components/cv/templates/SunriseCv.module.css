@@ -1,0 +1,88 @@
+.sheet {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  background: #fff8f2;
+  color: #4a2c1a;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 36px 44px;
+  background: linear-gradient(90deg, #fb923c 0%, #fdba74 100%);
+  color: #3b1d0a;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.title {
+  margin: 6px 0 0;
+  font-weight: 700;
+}
+
+.contact {
+  margin: 8px 0 0;
+  font-size: 11.5px;
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #fff8f2;
+}
+
+.body {
+  padding: 28px 44px 44px;
+}
+
+.body h2 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c2410c;
+}
+
+.body section {
+  margin-bottom: 16px;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.row h3,
+.block h3 {
+  margin: 0;
+  font-size: 13.5px;
+}
+
+.meta {
+  margin: 2px 0 0;
+  color: #9a3412;
+}
+
+.block ul {
+  margin: 6px 0 0 16px;
+  padding: 0;
+}
+
+.block a {
+  color: #c2410c;
+}

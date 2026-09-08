@@ -1,0 +1,147 @@
+.sheet {
+  box-sizing: border-box;
+  width: 794px;
+  min-height: 1123px;
+  display: flex;
+  background: #fff;
+  color: #1c1917;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  background: #1f4d3a;
+  color: #f4f1ea;
+  padding: 40px 28px;
+}
+
+.photo {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 56px;
+  display: block;
+  margin: 0 auto 24px;
+  border: 3px solid rgba(255, 255, 255, 0.35);
+}
+
+.sideTitle {
+  margin: 0 0 10px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c5ddd0;
+}
+
+.sideBlock {
+  margin-bottom: 28px;
+}
+
+.contactItem,
+.skillItem {
+  margin: 0 0 8px;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.skillItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 6px;
+}
+
+.main {
+  flex: 1;
+  padding: 44px 40px;
+}
+
+.name {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #16382b;
+  line-height: 1.1;
+}
+
+.title {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #1f4d3a;
+  font-weight: 600;
+}
+
+.accent {
+  width: 48px;
+  height: 3px;
+  background: #1f4d3a;
+  margin: 16px 0 20px;
+  border: 0;
+}
+
+.section {
+  margin-bottom: 22px;
+}
+
+.sectionTitle {
+  margin: 0 0 10px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #1f4d3a;
+  font-weight: 700;
+}
+
+.summary {
+  margin: 0;
+  color: #3f3f46;
+}
+
+.jobHeader,
+.eduHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.role,
+.degree,
+.projectName {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.meta,
+.dates {
+  margin: 2px 0 0;
+  color: #57534e;
+}
+
+.dates {
+  white-space: nowrap;
+  color: #1f4d3a;
+  font-weight: 600;
+  font-size: 11.5px;
+}
+
+.bullets {
+  margin: 6px 0 14px 16px;
+  padding: 0;
+  color: #3f3f46;
+}
+
+.project {
+  margin-bottom: 12px;
+}
+
+.project p {
+  margin: 4px 0 0;
+  color: #3f3f46;
+}
+
+.link {
+  color: #1f4d3a;
+}
